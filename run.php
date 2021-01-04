@@ -40,7 +40,7 @@ try {
     $latest = array();
     $latest['episode'] = $latest_item[1]['value'];
     
-    if( !file_exists($episode_file) || intval(file_get_contents($episode_file)) <= $latest['episode']) {
+    if( !file_exists($episode_file) || intval(file_get_contents($episode_file)) < $latest['episode']) {
 
         $latest['title'] = $latest_item[0]['value'];    
         $latest['name'] = $latest_item[2]['value'];
