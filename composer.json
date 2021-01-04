@@ -1,0 +1,7 @@
+{
+    "require": {
+        "sabre/uri": "^2",
+        "sabre/xml": "^2.2",
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
