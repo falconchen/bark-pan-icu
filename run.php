@@ -58,6 +58,8 @@ try {
 
         file_put_contents($config['episode_file'],$latest['episode']);
 
+    }else{
+        touch($episode_file);
     }
 
 } catch (RequestException $e) {
